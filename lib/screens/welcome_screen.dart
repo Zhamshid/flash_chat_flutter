@@ -35,9 +35,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     controller!.forward();
 
     controller!.addListener(
-          () {
+      () {
         setState(
-              () {
+          () {
             controller!.value;
           },
         );
@@ -93,12 +93,16 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             ),
             RoundedButton(
               color: Colors.lightBlueAccent,
-              routeName: LoginScreen.id,
+              onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.id);
+              },
               buttonText: 'Log In',
             ),
             RoundedButton(
               color: Colors.blueAccent,
-              routeName: RegistrationScreen.id,
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.id);
+              },
               buttonText: 'Register',
             ),
           ],
@@ -107,4 +111,3 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     );
   }
 }
-

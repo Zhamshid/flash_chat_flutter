@@ -54,7 +54,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ),
             RoundedButton(
               color: Colors.blueAccent,
-              routeName: ChatScreen.id,
+              onPressed: (){
+                Navigator.pushNamed(context, ChatScreen.id);
+              },
               buttonText: 'Register',
             ),
           ],

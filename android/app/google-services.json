@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212222147869",
+    "project_id": "flashchat-bcfcb",
+    "storage_bucket": "flashchat-bcfcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212222147869:android:cf7568ba2ef3f0e6abf5f4",
+        "android_client_info": {
+          "package_name": "kz.irisbayev.flash_chat_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212222147869-20e3e3uj958c59k5n067i7u9t5j3hdlm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXbXU76iT6dni0EO3RgGjkLjKdMlyoXG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212222147869-20e3e3uj958c59k5n067i7u9t5j3hdlm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

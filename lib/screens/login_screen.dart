@@ -54,7 +54,9 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             RoundedButton(
                 color: Colors.lightBlueAccent,
-                routeName: ChatScreen.id,
+                onPressed: (){
+                  Navigator.pushNamed(context, ChatScreen.id);
+                },
                 buttonText: 'Log In'),
           ],
         ),

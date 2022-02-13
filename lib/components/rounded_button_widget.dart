@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 //ignore: must_be_immutable
 class RoundedButton extends StatelessWidget {
-  RoundedButton(
+  const RoundedButton(
       {Key? key,
       @required this.color,
-      @required this.routeName,
+      @required this.onPressed,
       @required this.buttonText})
       : super(key: key);
 
-  Color? color;
-  String? routeName;
-  String? buttonText;
+  final Color? color;
+  final void Function()? onPressed;
+  final String? buttonText;
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +22,7 @@ class RoundedButton extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(30.0),
         child: MaterialButton(
-          onPressed: () {
-            //Go to login screen.
-            Navigator.pushNamed(context, routeName!);
-          },
+          onPressed: onPressed,
           minWidth: 200.0,
           height: 42.0,
           child: Text(buttonText!),
